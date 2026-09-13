@@ -1,7 +1,7 @@
 import banner from '../assets/banner-stack.png'
 const Hero = () => {
     return (
-        <section className="flex gap-10">
+        <section className="flex">
             <div className="mx-auto flex w-full justify-between items-center px-6 py-16 ">
                 <div className="flex flex-col gap-6">
                     <h1 className="text-5xl font-bold">Build Your Ideal <br/>

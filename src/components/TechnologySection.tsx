@@ -2,8 +2,7 @@ import technologies from "../data/technologies.json";
 import type { Technology } from "../Technology";
 import TechnologyCard from "./TechnologyCard"
 import { useState, useEffect } from "react";
-import { toast } from "react-toastify";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 const TechnologySection = () => {
     const [selectedTechnologies, setSelectedTechnologies] = useState<Technology[]>([]);
     const [loading, setLoading] = useState(true);
@@ -37,7 +36,7 @@ const TechnologySection = () => {
     };
      if(loading) {
             return (
-                <p className="py-16 text-center text-gray-500">Loading technologies</p>
+                <p className="py-16 text-center text-gray-500">Loading technologies...</p>
             )
         }
 
@@ -65,7 +64,7 @@ const TechnologySection = () => {
                     <div className="self-start rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
                         <h3 className="text-xl font-bold">Your Stack</h3>
                         <p className="mt-2 text-sm text-gray-500">
-                            {selectedTechnologies.length} Technologies selected yet
+                            {selectedTechnologies.length} Technologies selected
                         </p>
                             {selectedTechnologies.length === 0 && (
                             <div className="mt-6 rounded-lg border border-gray-200 p-6 text-center">
