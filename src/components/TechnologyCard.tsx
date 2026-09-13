@@ -21,7 +21,7 @@ const TechnologyCard =({ technology, onAdd, isAdded,}: TechnologyCardProps)=>{
             </div>
             <h3 className="mt-4 text-xl font-bold">{technology.name}</h3>
 
-            <p className="mt-2 text-sm leading-6 text-gray-600">{technology.description}</p>
+            <p className="mt-2 text-sm leading-6 text-gray-800">{technology.description}</p>
 
             <div className="mt-4 flex items-center justify-between ">
                 <span className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600">{technology.category}</span>
