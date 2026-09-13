@@ -7,13 +7,13 @@ const Hero = () => {
                     <h1 className="text-5xl font-bold">Build Your Ideal <br/>
                     <span className="bg-linear-to-r  from-orange-500 via-pink-600 to-violet-600 bg-clip-text text-transparent">Development Stack</span>
                     </h1>
-                    <p className="text-gray-700">Explore frontend, backend, database, and tooling options,<br/>
+                    <p className="text-gray-600">Explore frontend, backend, database, and tooling options,<br/>
                         compare them side by side, and put together the stack that fits your<br/>
                         next project.
                     </p>
                     <div className="flex gap-4 mt-6">
-                        <button className="bg-linear-to-r  from-orange-500 via-pink-600 to-violet-600 text-white px-6 py-3 rounded-lg hover:opacity-90 cursor-pointer">Explore Technologies</button>
-                        <button className="bg-white border border-gray-300 shadow-sm px-6 py-3 rounded-lg  text-gray-700 cursor-pointer ">Learn More</button>
+                        <button className="btn btn-wide bg-linear-to-r  from-orange-500 via-pink-600 to-violet-600 text-white hover:opacity-90 ">Explore Technologies</button>
+                         <button className="btn btn-wide border border-gray-300 text-gray-700">Learn More</button>
                     </div>
                 </div>
                 <div className="w-1/2">
