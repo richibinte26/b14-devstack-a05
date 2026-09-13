@@ -1,5 +1,4 @@
 1.DevStack
-
 2.DevStack is a simple and interactive web application that helps developers explore different technologies and build their ideal development stack. Users can browse technologies by category, add their preferred tools to Your Stack, and manage their selections easily.
 
 3.Features: Explore Technologies: Browse frontend, backend, database, and other development technologies with their description, category, difficulty, and rating.
