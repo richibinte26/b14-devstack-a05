@@ -56,26 +56,26 @@ const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
             <ToastContainer />
 
             <section>
-                <div className="mx-14 px-6">
+                <div className="mx-4 sm:mx-8 md:mx-10 lg:mx-14 px-2 sm:px-4 lg:px-6">
 
                     {/* Section Heading */}
                     <div>
-                        <h2 className="text-3xl font-bold">
+                        <h2 className="text-2xl sm:text-3xl font-bold">
                             Explore the{" "}
                             <span className="text-pink-500">
                                 Technologies
                             </span>
                         </h2>
 
-                        <p className="mt-2 mb-8 text-gray-600">
+                        <p className="mt-2 mb-6 sm:mb-8 text-sm sm:text-base text-gray-600">
                             Pick one technology per category to build your ideal stack
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
+                    <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
 
                         {/* Technology Cards */}
-                        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
                             {technologies.map((technology) => (
                                 <TechnologyCard
                                     key={technology.id}
@@ -89,13 +89,13 @@ const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
                         </div>
 
                         {/* Your Stack */}
-                        <div className="self-start rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                        <div className="self-start rounded-xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm">
 
-                            <h3 className="text-xl font-bold">
+                            <h3 className="text-lg sm:text-xl font-bold">
                                 Your Stack
                             </h3>
 
-                            <p className="mt-2 text-sm text-gray-500">
+                            <p className="mt-2 text-xs sm:text-sm text-gray-500">
                                 {selectedTechnologies.length === 0
                                     ? "No technologies selected"
                                     : `${selectedTechnologies.length} ${
@@ -107,8 +107,8 @@ const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
 
                             {/* Empty Stack */}
                             {selectedTechnologies.length === 0 && (
-                                <div className="mt-6 rounded-lg border border-dashed border-gray-200 p-6 text-center">
-                                    <p className="text-sm text-gray-500">
+                                <div className="mt-6 rounded-lg border border-dashed border-gray-200 p-4 sm:p-6 text-center">
+                                    <p className="text-xs sm:text-sm text-gray-500">
                                         Your Stack is Empty
                                     </p>
                                 </div>
@@ -118,20 +118,20 @@ const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
                             {selectedTechnologies.map((technology) => (
                                 <div
                                     key={technology.id}
-                                    className="mt-4 flex items-center gap-3 rounded-lg border border-gray-50 bg-gray-50 p-3"
+                                    className="mt-4 flex items-center gap-2 sm:gap-3 rounded-lg border border-gray-50 bg-gray-50 p-2 sm:p-3"
                                 >
                                     <img
                                         src={technology.icon}
                                         alt={technology.name}
-                                        className="h-10 w-10"
+                                        className="h-8 w-8 sm:h-10 sm:w-10"
                                     />
 
                                     <div className="flex-1">
-                                        <p className="font-medium">
+                                        <p className="text-sm sm:text-base font-medium">
                                             {technology.name}
                                         </p>
 
-                                        <p className="text-sm text-gray-500">
+                                        <p className="text-xs sm:text-sm text-gray-500">
                                             {technology.category}
                                         </p>
                                     </div>
@@ -153,7 +153,7 @@ const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
                             {selectedTechnologies.length > 0 && (
                                 <button
                                     onClick={handleRemoveAll}
-                                    className="mt-5 w-full rounded-lg border border-red-200 py-2 text-sm text-pink-500 hover:bg-pink-50"
+                                    className="mt-5 w-full rounded-lg border border-red-200 py-2  text-xs sm:text-sm text-pink-500 hover:bg-pink-50"
                                 >
                                     Remove All
                                 </button>

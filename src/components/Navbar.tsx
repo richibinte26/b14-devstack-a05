@@ -4,7 +4,7 @@ import logo from '../assets/logo-text.png'
 const Navbar = () => {
     return (
         <nav className='sticky top-0 z-50 bg-white shadow-sm'>
-            <div className="mx-15 flex  justify-between items-center px-6 py-4 ">
+            <div className="mx-3 sm:mx-6 md:mx-10 lg:mx-15 flex  justify-between items-center px-2 sm:px-4 lg:px-6 py-4 ">
                 <button className='lg:hidden'>
                     <GiHamburgerMenu />
                 </button>
@@ -17,8 +17,8 @@ const Navbar = () => {
                     <a className='hover:text-pink-600' href="#">About</a>
                     <a className='hover:text-pink-600' href="#">Contact</a>
                 </div>
-                <div className='flex gap-2 items-center'>
-                  <button className=' font-medium text-slate-800 cursor-pointer'>Sign In</button>
+                <div className='flex gap-1 sm:gap-2 items-center'>
+                  <button className='text-sm sm:text-base font-medium text-slate-800 cursor-pointer'>Sign In</button>
                   <button className='rounded-full bg-pink-600 px-3 sm:px-5 py-2.5 text-sm font-semibold text-white hover:bg-pink-500 cursor-pointer'>Sign Up</button>
                 
                 </div>
