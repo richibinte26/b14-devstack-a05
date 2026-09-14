@@ -1,22 +1,16 @@
 import { RxCross2 } from "react-icons/rx";
-import technologies from "../data/technologies.json";
 import type { Technology } from "../Technology";
 import TechnologyCard from "./TechnologyCard";
-import { useState, useEffect } from "react";
+import { use, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
-const TechnologySection = () => {
+interface TechnologySectionProps {
+    technologiesPromise: Promise<Technology[]>;
+}
+
+const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
+    const technologies = use(technologiesPromise);
     const [selectedTechnologies, setSelectedTechnologies] = useState<Technology[]>([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 500);
-
-        return () => clearTimeout(timer);
-    }, []);
 
     const handleAddToStack = (technology: Technology) => {
         const alreadyAdded = selectedTechnologies.some(
@@ -56,14 +50,6 @@ const TechnologySection = () => {
         setSelectedTechnologies([]);
         toast.success("All technologies removed from your stack!");
     };
-
-    if (loading) {
-        return (
-            <p className="py-16 text-center text-gray-500">
-                Loading technologies...
-            </p>
-        );
-    }
 
     return (
         <>
@@ -158,7 +144,6 @@ const TechnologySection = () => {
                                         }
                                         className="text-gray-400 hover:text-pink-500 cursor-pointer"
                                     >
-                                        
                                         <RxCross2 />
                                     </button>
                                 </div>
