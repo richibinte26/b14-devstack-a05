@@ -4,7 +4,7 @@ import TechnologySection from "./components/TechnologySection";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import type { Technology } from "./Technology";
-import technologiesData from "./data/technologies.json";
+import technologiesData from "../public/data/technologies.json";
 
 const fetchTechnologies = (): Promise<Technology[]> => {
     return new Promise((resolve) => {

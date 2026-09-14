@@ -107,7 +107,7 @@ const TechnologySection = ({ technologiesPromise }: TechnologySectionProps) => {
 
                             {/* Empty Stack */}
                             {selectedTechnologies.length === 0 && (
-                                <div className="mt-6 rounded-lg border border-dashed border-gray-200 p-4 sm:p-6 text-center">
+                                <div className="mt-6 rounded-lg border border-dashed border-gray-600 p-4 sm:p-6 text-center">
                                     <p className="text-xs sm:text-sm text-gray-500">
                                         Your Stack is Empty
                                     </p>

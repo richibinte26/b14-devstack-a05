@@ -7,7 +7,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "text-pink-700 bg-pink-100"
   },
   {
     "id": "vue",
@@ -17,7 +18,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "Easy"
+    "badge": "Easy",
+    "badgeColor": "text-green-700 bg-green-100"
   },
   {
     "id": "nodejs",
@@ -27,7 +29,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "text-pink-700 bg-pink-100"
   },
   {
     "id": "express",
@@ -37,7 +40,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor": "text-orange-700 bg-orange-100"
   },
   {
     "id": "postgresql",
@@ -47,7 +51,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": "Top SQL",
+    "badgeColor": "text-blue-700 bg-blue-100"
   },
   {
     "id": "mongodb",
@@ -57,7 +62,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "text-pink-700 bg-pink-100"
   },
   {
     "id": "typescript",
@@ -67,7 +73,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "text-violet-700 bg-violet-100"
   },
   {
     "id": "javascript",
@@ -77,7 +84,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "text-violet-700 bg-violet-100"
   },
   {
     "id": "tailwind",
@@ -87,7 +95,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor": "text-orange-700 bg-orange-100"
   },
   {
     "id": "docker",
@@ -97,7 +106,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": "Containers",
+    "badgeColor": "text-sky-700 bg-sky-100"
   },
   {
     "id": "git",
@@ -107,16 +117,18 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "text-violet-700 bg-violet-100"
   },
   {
     "id": "github",
     "name": "GitHub",
     "category": "Tools",
     "description": "A platform for hosting, collaborating on, and managing software projects.",
-    "icon":"https://cdn.simpleicons.org/github",
+    "icon": "https://cdn.simpleicons.org/github",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "text-pink-700 bg-pink-100"
   }
 ]
