@@ -1,7 +1,7 @@
 export interface Technology{
-    id: String;
-    name: String;
-    category: String;
+    id: string;
+    name: string;
+    category: string;
     description: string;
     icon: string;
     rating: number;

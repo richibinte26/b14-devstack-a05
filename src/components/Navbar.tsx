@@ -4,7 +4,7 @@ import logo from '../assets/logo-text.png'
 const Navbar = () => {
     return (
         <nav className='sticky top-0 z-50 bg-white shadow-sm'>
-            <div className="mx-auto flex w-full justify-between items-center px-6 py-4 ">
+            <div className="mx-15 flex  justify-between items-center px-6 py-4 ">
                 <button className='lg:hidden'>
                     <GiHamburgerMenu />
                 </button>
